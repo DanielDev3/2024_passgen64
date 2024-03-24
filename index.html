@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Password Generator</title>
+</head>
+<body>
+    <h2>Password Generator</h2>
+    <label for="length">Length:</label>
+    <input type="number" id="length" name="length" min="1" max="128" value="12">
+    <br>
+    <input type="checkbox" id="useSymbols" name="useSymbols">
+    <label for="useSymbols">Include Symbols</label>
+    <br>
+    <div class="form-controls">
+    <button onclick="generatePassword()">Generate</button>
+    <button onclick="copyPassword()">Copy</button>
+    <button onclick="clearPassword()">Clear</button>
+    </div>
+    <p>Generated Password: <span id="generatedPassword"></span></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

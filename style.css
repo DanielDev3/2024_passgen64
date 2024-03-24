@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px; /* Adjust based on your preference */
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px; /* Space between title and form */
+}
+
+form, p {
+    width: 80%; /* Adjust based on your preference */
+    max-width: 500px; /* Ensures form doesn't get too wide on large screens */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers text and form elements */
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 100%; /* Full width inside form, adjust below for narrower input */
+    max-width: 250px; /* Makes the input narrower */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 auto; /* Centers the input */
+    display: block; /* Ensures it's treated as a block element for centering */
+}
+
+
+input[type="checkbox"] + label {
+    margin: 20px 0; /* Vertical spacing */
+}
+.form-controls {
+    display: flex;
+    justify-content: space-between; /* This will space out the buttons */
+    margin: 20px 0;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Make button block to center it */
+    margin: 20px auto; /* Auto margins center the button horizontally */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around; /* This will space out the buttons evenly */
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.form-controls button {
+    margin: 10px 10px; /* Adds 10px margin on all sides */
+}
+
+#generatedPassword {
+    font-weight: bold;
+    color: #007bff;
+}
